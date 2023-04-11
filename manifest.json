@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "Hide YT Shorts on Subscription Page",
+	"version": "1.0",
+
+	"description": "Hide YouTube shorts on the subscriptions page.",
+
+	"icons": {
+		"48": "icons/border-48.png"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["*://*.youtube.com/feed/subscriptions"],
+			"js": ["main.js"]
+		}
+	]
+}
